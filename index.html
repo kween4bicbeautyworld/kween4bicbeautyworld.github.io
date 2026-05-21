@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kween4bic Beauty World | Luxury Hair, Nails, Facials & Beauty Salon in Lagos Nigeria</title>
+
+<meta name="description" content="Kween4bic Beauty World is a premium beauty salon in Lagos, Nigeria led by Ms. Queen Onuoha. We specialize in luxury hairstyling, wigs, revamping, acrylic nails, gel polish, manicure, pedicure, facials, healthy hair care, and beauty treatments for modern women.">
+
+<meta name="keywords" content="Beauty Salon Lagos, Hairdresser Lagos, Acrylic Nails Lagos, Gel Polish Lagos, Facial Treatment Lagos, Wig Installation Lagos, Hairstylist Nigeria, Kween4bic Beauty World, Ms Queen Onuoha">
+
+<meta name="author" content="Kween4bic Beauty World">
+
+<meta property="og:title" content="Kween4bic Beauty World">
+<meta property="og:description" content="Luxury beauty salon in Lagos offering hairstyling, wigs, nails, facials, manicure, pedicure, and healthy hair treatments.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:800;
+    color:#b5179e;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    color:white;
+    padding:13px 24px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+    transform:translateY(-2px);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+    linear-gradient(135deg,#fff1f8 0%, #ffe3ec 30%, #f3d9ff 70%, #f8edff 100%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255,0.4);
+    border-radius:50%;
+    top:-100px;
+    right:-120px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,0.3);
+    border-radius:50%;
+    bottom:-100px;
+    left:-100px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:60px;
+    align-items:center;
+}
+
+.hero-text small{
+    display:inline-block;
+    background:white;
+    color:#b5179e;
+    padding:10px 18px;
+    border-radius:40px;
+    font-weight:600;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.15;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.hero-text h1 span{
+    color:#b5179e;
+}
+
+.hero-text p{
+    font-size:1.08rem;
+    color:#555;
+    margin-bottom:35px;
+    line-height:1.9;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.primary-btn{
+    background:#b5179e;
+    color:white;
+    padding:16px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.primary-btn:hover{
+    background:#9d1388;
+}
+
+.secondary-btn{
+    background:#25D366;
+    color:white;
+    padding:16px 30px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.hero-image img{
+    border-radius:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    object-fit:cover;
+    height:650px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    margin-bottom:15px;
+    color:#b5179e;
+}
+
+.section-title p{
+    max-width:760px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    border-radius:25px;
+    height:650px;
+    object-fit:cover;
+}
+
+.about-text h3{
+    font-size:2.2rem;
+    margin-bottom:25px;
+}
+
+.about-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.services{
+    background:#fff7fb;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s ease;
+    box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card img{
+    height:280px;
+    object-fit:cover;
+}
+
+.service-content{
+    padding:30px;
+}
+
+.service-content h3{
+    color:#b5179e;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.service-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* FEATURES */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:40px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.feature h3{
+    margin:20px 0 15px;
+    color:#b5179e;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    height:350px;
+    border-radius:20px;
+    object-fit:cover;
+    transition:0.4s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* CTA */
+
+.cta{
+    background:
+    linear-gradient(135deg,#b5179e,#7209b7);
+    color:white;
+    text-align:center;
+    border-radius:35px;
+    padding:70px 40px;
+}
+
+.cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:800px;
+    margin:auto;
+    margin-bottom:35px;
+    line-height:1.9;
+    color:#f3f3f3;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:#bbb;
+    text-align:center;
+    padding:30px;
+    margin-top:80px;
+}
+
+footer p{
+    margin-bottom:8px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .section-title h2{
+        font-size:2.1rem;
+    }
+
+    .cta h2{
+        font-size:2.1rem;
+    }
+
+    .hero-image img{
+        height:auto;
+    }
+
+    .about img{
+        height:auto;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="container nav-content">
+
+        <div class="logo">
+            Kween4bic Beauty World
+        </div>
+
+        <a href="https://wa.me/2348162276692" target="_blank" class="whatsapp-btn">
+            Book via WhatsApp
+        </a>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <small>
+                Luxury Beauty Experience in Lagos, Nigeria
+            </small>
+
+            <h1>
+                Beauty, Elegance & Confidence Led By <span>Ms. Queen Onuoha</span>
+            </h1>
+
+            <p>
+                Welcome to Kween4bic Beauty World, a premium beauty salon in Lagos dedicated to helping women look elegant, confident, classy, and radiant. We specialize in luxury hairstyling, wig installations, revamping, healthy hair care, acrylic nails, gel polish, manicure, pedicure, facials, and complete beauty enhancement services tailored to modern women who appreciate quality and professionalism.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#services" class="primary-btn">
+                    Explore Services
+                </a>
+
+                <a href="https://wa.me/2348162276692" target="_blank" class="secondary-btn">
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/700x850" alt="Kween4bic Beauty World Lagos Beauty Salon">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                World Class Beauty With Creativity & Professionalism
+            </h2>
+
+            <p>
+                At Kween4bic Beauty World, every beauty transformation is handled with professionalism, creativity, hygiene, elegance, and attention to detail.
+            </p>
+
+        </div>
+
+        <div class="about">
+
+            <div>
+                <img src="https://via.placeholder.com/700x850" alt="Ms Queen Onuoha Hairdresser and Beauty Specialist">
+            </div>
+
+            <div class="about-text">
+
+                <h3>
+                    Meet Ms. Queen Onuoha
+                </h3>
+
+                <p>
+                    Kween4bic Beauty World is proudly led by Ms. Queen Onuoha, a professional beauty entrepreneur passionate about helping women feel beautiful, confident, stylish, and refreshed.
+                </p>
+
+                <p>
+                    Beyond beauty services, she also holds a Bachelor's Degree in Architecture from the Federal University of Technology, Owerri. Her background in design and creativity reflects in the precision, aesthetics, elegance, and attention to detail seen in every hairstyle, nail design, and beauty treatment delivered.
+                </p>
+
+                <p>
+                    From luxury wigs and healthy hair treatments to acrylic nails, facials, manicure, and pedicure, every client receives a premium beauty experience tailored to their unique style and beauty goals.
+                </p>
+
+                <a href="https://wa.me/2348162276692" target="_blank" class="secondary-btn">
+                    Schedule Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Premium Beauty Services
+            </h2>
+
+            <p>
+                Designed for women who love elegance, beauty, self care, luxury, confidence, and modern fashion.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <img src="https://via.placeholder.com/600x500" alt="Luxury Hair Styling Lagos">
+
+                <div class="service-content">
+
+                    <h3>
+                        Hair Dressing & Styling
+                    </h3>
+
+                    <p>
+                        Professional hairstyles, revamping, wig installations, hair coloring, healthy hair care, silk press, and modern hairstyling for every occasion.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="https://via.placeholder.com/600x500" alt="Acrylic Nails Lagos">
+
+                <div class="service-content">
+
+                    <h3>
+                        Acrylic & Gel Polish Nails
+                    </h3>
+
+                    <p>
+                        Elegant acrylic nail designs and long lasting gel polish services created to enhance your beauty and complement your style.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="https://via.placeholder.com/600x500" alt="Manicure and Pedicure Lagos">
+
+                <div class="service-content">
+
+                    <h3>
+                        Manicure & Pedicure
+                    </h3>
+
+                    <p>
+                        Refreshing manicure and pedicure treatments focused on beauty, cleanliness, relaxation, softness, and complete self care.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="https://via.placeholder.com/600x500" alt="Facial Treatment Lagos">
+
+                <div class="service-content">
+
+                    <h3>
+                        Facial Treatments
+                    </h3>
+
+                    <p>
+                        Professional facial treatments that help improve glow, skin freshness, confidence, and natural beauty in a relaxing environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Why Clients Choose Kween4bic Beauty World
+            </h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature">
+                <h3>Professional Excellence</h3>
+                <p>
+                    Beauty services delivered with professionalism, precision, creativity, and attention to detail.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Luxury Beauty Experience</h3>
+                <p>
+                    A relaxing and premium atmosphere designed to make every client feel special and confident.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Clean & Hygienic Environment</h3>
+                <p>
+                    Client safety, hygiene, comfort, and cleanliness remain a top priority at all times.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Affordable Quality</h3>
+                <p>
+                    Premium beauty services at affordable prices without compromising quality and satisfaction.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Beauty Gallery
+            </h2>
+
+            <p>
+                Replace these placeholders with your hairstyles, nail designs, facial treatments, beauty transformations, and satisfied clients.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <img src="https://via.placeholder.com/500x650" alt="Hair Styling Work">
+            <img src="https://via.placeholder.com/500x650" alt="Acrylic Nail Design">
+            <img src="https://via.placeholder.com/500x650" alt="Luxury Wig Installation">
+            <img src="https://via.placeholder.com/500x650" alt="Beauty Salon Lagos">
+            <img src="https://via.placeholder.com/500x650" alt="Facial Treatment">
+            <img src="https://via.placeholder.com/500x650" alt="Manicure and Pedicure">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section>
+
+    <div class="container">
+
+        <div class="cta">
+
+            <h2>
+                Ready For Your Beauty Transformation?
+            </h2>
+
+            <p>
+                Visit Kween4bic Beauty World in Lagos today for professional hairstyling, luxury wigs, acrylic nails, gel polish, manicure, pedicure, facials, and premium beauty care services tailored to your style and confidence.
+            </p>
+
+            <a href="https://wa.me/2348162276692" target="_blank" class="whatsapp-btn">
+                Book Your Appointment Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        Kween4bic Beauty World
+    </p>
+
+    <p>
+        Led by Ms. Queen Onuoha
+    </p>
+
+    <p>
+        Lagos, Nigeria | 08162276692
+    </p>
+
+</footer>
+
+</body>
+</html>
